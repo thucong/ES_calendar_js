@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lib/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+       
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="d-flex justify-content-end">
+                <div class="btn-group mt-5 w-25 " role="group" >
+                    <button type="button" class="btn btn-outline-primary display-month">Month</button>
+                    <button type="button" class="btn btn-outline-primary display-year">Year</button>
+                </div>
+            </div>
+            <div class="list-calendar-months ">
+                <div class="calendar">
+                   
+                   
+                    <div class="d-flex justify-content-between mt-4 align-items-center">
+                        <div class="prev">
+                            <i class="fas fa-chevron-left cursor-pointer "></i>
+                        </div>
+                        
+                        <div>
+                            <h1><span class="month-picker"></span> <span class="year"></span> </h1>
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-chevron-right cursor-pointer "></i>
+                        </div>
+                       
+                    </div>
+                    <div class="calendar-body mt-4">
+                        <div class="calendar-week-day  text-center">
+                            <div class="border border-1 py-2">Sun</div>
+                            <div class="border border-1 py-2">Mon</div>
+                            <div class="border border-1 py-2">Tue</div>
+                            <div class="border border-1 py-2">Wed</div>
+                            <div class="border border-1 py-2">Thu</div>
+                            <div class="border border-1 py-2">Fri</div>
+                            <div class="border border-1 py-2">Sat</div>
+                        </div>
+                        <div class="calendar-days text-center ">
+                            <!-- <div class="h-100 py-4 border border-1 cursor-pointer">1</div>
+                            -->
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div id="myModal" class="modal">
+                    <div class="modal-content1">
+                        <form action="#">
+                            <span class="close">&times;</span>
+                            <h2 class="text-center mb-3">Add</h2>
+                            <div class="fomrgroup  mb-2">
+                                <b>Content:</b>
+                                <input type="text" placeholder="add..." class="content_input">
+                            </div>
+                            <div class="fomrgroup text-center">
+                                <button class="btn btn-success add">Add</button>
+                            </div>
+                        </form>
+                        <div id="result"></div>
+                    </div>
+                   
+                </div>
+            </div>
+            
+            <div class="list-calendar-years">
+                <div class="d-flex justify-content-between mt-4 align-items-center">
+                    <div class="prev-year">
+                        <i class="fas fa-chevron-left cursor-pointer "></i>
+                    </div>
+                    
+                    <div>
+                        <h1 class="years"></h1>
+                    </div>
+                    <div class="next-year">
+                        <i class="fas fa-chevron-right cursor-pointer "></i>
+                    </div>
+                   
+                </div>
+                <div class="calendar-body mt-4 calendar-year">
+                   
+                </div>
+            </div>
+        </div>
+         <script src="main.js" ></script>
+    </body>
+</html>

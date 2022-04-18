@@ -1,0 +1,90 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+.calendar-week-day {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+}
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.day-hover:hover {
+  border: 2px solid blue;
+}
+.curr-date {
+  background: #007eff;
+}
+.border-day {
+  border: 1px solid darkgray;
+  cursor: pointer;
+  height: 10vh;
+  text-align: center;
+}
+.bg {
+  background-color: black;
+}
+
+.fomrgroup {
+  width: 50%;
+  margin: auto;
+  display: block;
+  height: 50px;
+}
+.fomrgroup input {
+  float: right;
+  width: 70%;
+  height: 35px;
+  margin-right: 20px;
+  line-height: 50px;
+}
+.fomrgroup b {
+  font-size: 20px;
+}
+/* The Modal (background) */
+.modal {
+  display: block; /* mặc định được ẩn đi */
+  position: fixed; /* vị trí cố định */
+  z-index: 1; /* Ưu tiên hiển thị trên cùng */
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.color-icon-red{
+  color: red;
+}
+.calendar-year{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-weight: 600;
+}
